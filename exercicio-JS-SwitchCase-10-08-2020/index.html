@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon-js.png">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/b55b406ab0.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>Exercício de Switch Case com JS</title>
+</head>
+<body>
+    <header>
+        <h1>Escalas termométricas</h1>
+    </header>
+    <main>
+        <p> 
+            As escalas termométricas são utilizadas para medir a temperatura (medida do grau de agitação das moléculas), ou seja, elas são utilizadas para indicar se um determinado corpo está quente ou frio.
+        </p>
+        <p>
+            Já existiram diversas escalas termométricas ao longo da História, mas apenas três são utilizadas nos dias atuais, sendo elas: Celsius, Fahrenheit e Kelvin. Essas escalas utilizam como padrão os pontos de fusão e ebulição da água.
+        </p>
+        <article id="article-Celsius">
+            <h3>Escala Celsius</h3>
+            <p>
+                Trata-se de uma escala termométrica centígrada, ou seja, que apresenta cem intervalos entre os pontos de fusão e ebulição. Ela foi determinada no ano de 1742 pelo astrônomo sueco Anders Celsius. Quando desenvolveu a escala Celsius, chamou-a de Centígrado, mas, no ano de 1948, a escala passou a ser chamada de Celsius em homenagem ao seu criador e para evitar confusões com a sigla SI (<em>Sistema Internacional</em>), que é utilizada para designar todas as unidades de medida.
+            </p>
+            <p>
+                Celsius utilizou como referência para a sua escala termométrica os seguintes valores para os pontos de fusão e ebulição da água:
+            </p>
+            <p>
+                <ul>
+                    <li>Ponto de fusão da água = 100°C</li>
+                    <li>Ponto de ebulição da água = 0°C</li>
+                </ul>
+            </p>
+            <p>
+                Porém, os valores atribuídos para os pontos de fusão e ebulição foram reorganizados por alguns criadores dos termômetros, como os suecos Carolus Linnaeus e Daniel Ekström, da seguinte forma:
+            </p>
+            <p>
+                <ul>
+                    <li>Ponto de fusão da água = 0°C</li>
+                    <li>Ponto de ebulição da água = 100°C</li>
+                </ul>
+            </p>
+            <p>
+                Esses valores são utilizados até os dias atuais. Vale ressaltar que a escala Celsius é utilizada hoje em quase todos os países.
+            </p>
+        </article>
+        <article id="article-Fahrenheit">
+            <h3>Escala Fahrenheit</h3>
+            <p>
+                A escala Fahrenheit foi desenvolvida pelo físico e engenheiro Gabriel Fahrenheit, no ano de 1724, após obter conhecimento sobre a construção de termômetros de mercúrio.
+            </p>
+            <p>
+                Na sua escala, Fahrenheit utilizou como referência os valores dos pontos de fusão e ebulição da água, para os quais ele adotou os seguintes valores:
+            </p>
+            <p>
+                <ul>
+                    <li>Ponto de fusão da água = 32°F</li>
+                    <li>Ponto de ebulição da água = 212°F</li>
+                </ul>
+            </p>
+            <p>
+                Como temos 180 intervalos entre as temperaturas 32 e 212, a escala Fahrenheit não é considerada centígrada, como é a escala Celsius.
+            </p>
+            <p>
+                Trata-se de uma escala que foi muito utilizada nas colônias britânicas, sendo muito utilizada hoje em países como Inglaterra e Estados Unidos.
+            </p>
+        </article>
+        <article id="article-Kelvin">
+            <p>
+                A escala Kelvin foi proposta em 1864 pelo físico e engenheiro irlandês William Thomson, o qual também era conhecido como Lord Kelvin. Ele acreditava que era necessária uma escala termométrica que pudesse atribuir a um material uma total ausência de movimentação de suas partículas, o que ele chamou de zero absoluto.
+            </p>
+            <p>
+                Assim, para Lord Kelvin, sua escala não poderia apresentar valores negativos para a temperatura. Assim como Celsius e Fahrenheit, ele utilizou como referência os seguintes pontos de fusão e ebulição da água:
+            </p>
+            <p>
+                <ul>
+                    <li>Ponto de fusão da água = 273 K</li>
+                    <li>Ponto de ebulição da água = 373 K</li>
+                </ul>
+            </p>
+            <p>
+                Hoje, Kelvin é a escala termométrica adotada pelo <em>Sistema Internacional</em>.
+            </p>
+        </article>
+        <article>
+            <h3>Como converter uma escala termométrica em outra</h3>
+            <p>
+                Como as três escalas termométricas são utilizadas em lugares diferentes, é interessante saber a forma de converter uma em outra. Para isso, basta utilizar a seguinte relação:
+            </p>
+            <p>
+                Tc/5 = Tf-32/9 = Tk-273/5
+            </p>
+            <p>
+                <ul>
+                    <li>Tc = Temperatura em graus Celsius</li>
+                    <li>Tf = Temperatura em graus Fahrenheit</li>
+                    <li>Tk = Temperatura Kelvin</li>
+                </ul>
+            </p>
+            <p>
+                Dessa forma:
+            </p>
+            <p>
+                <ul>
+                    <li>Para transformar Celsius para Kelvin: Tk = Tc + 273</li>
+                    <li>Para transformar Kelvin para Celsius: Tc = Tk-273</li>
+                    <li>Para transformar Celsius para Fahrenheit ou Fahrenheit para Celsius: Tc/5 = Tf - 32/9</li>
+                    <li>Para transformar Kelvin para Fahrenheit ou Fahrenheit para Kelvin: Tf - 32/9 = Tk - 273/5</li>
+                </ul>
+            </p>
+            <p>
+                Veja dois exemplos de transformação de uma escala de temperatura em outra:
+            </p>
+            <p>
+                1º) Transformar 150 K para a escala Celsius
+            </p>
+            <p>
+                Para transformar a temperatura 150 K (Kelvin) para graus Celsius, basta utilizar a expressão:
+            </p>
+            <p>
+                Tc = Tk - 273
+                Tc = 150 – 273
+                Tc = - 123°C
+            </p>
+            <p>
+                2º) Transformar 75 oF para a escala Celsius:
+            </p>
+            <p>
+                Para transformar a temperatura 150 K (Kelvin) para graus Celsius, basta utilizar a expressão:
+            </p>
+            <p>
+                Tc/5 = Tf - 32 / 9
+                Tc/5 = 7.5 - 32/9
+                9.Tc = 5.43
+                9Tc = 215
+                Tc = 215/9
+                Tc = 23,88°C
+            </p>
+            <section id="video">
+                <h3>Assista ao Vídeo</h3>
+                <iframe src="https://www.youtube.com/embed/JuF_cmFy--Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </article>
+        <aside id="aside-converter">
+            <h3>Conversor de temperatura</h3>
+            <input type="number" id="input-converter" placeholder="Digite um número">
+            <!-- O disabled desabilita o elemento -->
+            <!-- disabled -->
+            <select id="select-converter">
+                <option value="">--Selecione uma opção--</option>
+                <option value="1">Celsius para Fahrenheit</option>
+                <option value="2">Fahrenheit para Celsius</option>  
+                <option value="3">Kelvin para Fahrenheit</option>
+                <option value="4">Fahrenheit para Kelvin</option>
+            </select>
+            <section id="res">
+                <!-- O resultado da conversão irá aparecer aqui -->
+            </section>
+            <p>
+                <button id="button-converter" onclick="inciciaConversor()">
+                    Converter
+                </button>
+            </p>
+        </aside>
+        <article>
+            <form>
+            <label for="comentarios">Você gostou dessa materia?</label>
+            <input type="text" id="nome" placeholder="Informe o seu nome" autocomplete="off">
+            <textarea id="comentarios" cols="79" rows="5" placeholder="Comente aqui"></textarea>
+            </form>
+            <p>
+                <button id="button-postar" onclick="iniciaComentario()">
+                    Postar
+                </button>
+            </p>
+            <article id="article-comentarios">
+                <!-- Iremos mostrar comentários sobre o assunto -->
+            </article>
+        </article>
+        <!-- Para a atividade switch case -->
+        <article id="article-atividade">
+            <h3>Atividade com o switch case</h3>
+            <table>
+                <caption>Tabela de cardápios</caption>
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Preço  Unitário (R$)</th>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>Cachorro quente</td>
+                    <td>R$1,70</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Bauru Simples</td>
+                    <td>R$2,30</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Bauru com ovo</td>
+                    <td>R$2,60</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Hamburguer</td>
+                    <td>R$2,40</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Cheeseburguer</td>
+                    <td>R$2,50</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Refrigerante</td>
+                    <td>R$1,00</td>
+                </tr>
+            </table>
+            <select id="opcoes">
+                <option value="">--Selecione uma opção--</option>
+                <option value="100">Cachorro quente</option>
+                <option value="101">Bauru Simples</option>
+                <option value="102">Bauru com ovo</option>
+                <option value="103">Hamburguer</option>
+                <option value="104">Cheeseburguer</option>
+                <option value="105">Refrigerante</option>
+            </select>
+            <p>
+                <button id="button-switch-case" onclick="iniciaSwitchCase()">
+                    switch case
+                </button>
+            </p>
+            <section id="res-switch">
+                <!-- O resultado irá aparecer aqui -->
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section id="criador">
+            <h3>Criador</h3>
+            <p class="criador-direitos">
+                &copy; By Lucas Miller <time datetime="2020-08-10">10/08/2020</time>
+            </p>
+        </section>
+        <section id="redes">
+            <h3 class="social">Redes Sociais</h3>
+            <p class="social">
+              <a target="_blank" href="https://www.facebook.com/lucas.miller.125323"><i class="fab fa-facebook"></i></a>  
+            </p>
+            <p class="social">
+                <a target="_blank" href="https://www.instagram.com/lucasmillercruz/"><i class="fab fa-instagram"></i></a>
+            </p>
+            <p class="social">
+                <a target="_blank" href="https://github.com/LucasMiller98"><i class="fab fa-github"></i></a>
+            </p>
+            <p class="social">
+                <a target="_blank" href="https://www.linkedin.com/in/lucas-miller-076564175/"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+        </section>
+        <section id="direitos">
+            <h3>Direitos</h3>
+            <p class="criador-direitos start">
+                &copy; Todos os direitos reservados a Start Latam e a Accenture
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
